@@ -22,3 +22,9 @@ password.send_keys(credentials.password)
 password.submit()
 
 time.sleep(5)
+
+driver.get("https://www.facebook.com/ETtodayMOVIE")
+
+for i in range(20):
+    driver.execute_script("window.scrollTo(0, document.body.scrollHeight)")
+    time.sleep(3)
